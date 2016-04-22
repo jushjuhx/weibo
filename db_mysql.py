@@ -1,7 +1,7 @@
 import pymysql , configparser
 import time
 class dbMysql:
-    #获取config配置文件def getConfig(section, key). 设置database信息
+    #获取config配置文件def getConfig(section, key). 设置database 信息
     __config = configparser.ConfigParser()
     __config.read('config.ini')
     __dbhost = __config.get('database', 'dbhost')
