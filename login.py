@@ -1,4 +1,4 @@
-# http://www.cnblogs.com/xuchaosheng/p/3749693.html
+#   http://www.cnblogs.com/xuchaosheng/p/3749693.html
 # import 这边需要注意的是只有一个rsa这个模块是需要install的，其他的都是内置
 import re , urllib.parse , urllib.request , http.cookiejar , base64 , binascii , rsa
 import configparser , time , json
