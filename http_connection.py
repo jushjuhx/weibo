@@ -6,7 +6,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 user_agent = config.get('user_agent', 'ua_uc')
 
-# 封装一个用于get的函数
+# 封装一个用于get 的函数
 def getData(url,headers = {'User-Agent' : user_agent,'Accept-Encoding':'gzip'}) :
     request = urllib.request.Request(url,headers=headers)
     response = urllib.request.urlopen(request)
@@ -16,7 +16,7 @@ def getData(url,headers = {'User-Agent' : user_agent,'Accept-Encoding':'gzip'}) 
     body = text.decode(chardet.detect(text)['encoding'],'ignore')
     return body
 
-# 封装一个用于post的函数
+# 封装一个用于post 的函数
 def postData(url , data , headers = {'User-Agent' : user_agent,'Accept-Encoding':'gzip'}) :
     # 这里的urlencode用于把一个请求对象用'&'来接来字符串化，接着就是编码成utf-8
     data = urllib.parse.urlencode(data).encode('utf-8')
