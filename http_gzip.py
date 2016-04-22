@@ -1,4 +1,4 @@
-__author__ = 'hope'
+__author__ = 'mounsurf'
 import io , gzip
 
 #解压gzip
