@@ -1,6 +1,6 @@
 {
     "ssh": {
-        "host": "123.206.78.44",
+        "host": "123.123.123.123",
         "username": "root",
         "password": "abc@123"
     }
